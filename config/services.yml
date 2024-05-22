@@ -11,6 +11,7 @@ services:
     PrestaShop\Module\PsFixturesCreator\Creator\CartCreator:
       arguments:
         $faker: '@Faker\Generator'
+        $commandBus: '@prestashop.core.command_bus'
 
     PrestaShop\Module\PsFixturesCreator\Creator\CartRuleCreator:
       arguments:
